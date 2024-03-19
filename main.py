@@ -5,7 +5,7 @@ args = normal.get_args()
 llm_instance = run(args)
 
 def main():
-    with gr.Blocks(css="footer {visibility: hidden}") as demo:
+    with gr.Blocks(css="footer {visibility: hidden}",theme=gr.themes.Soft()) as demo:
         gr.Markdown("""<center><font size=10>Data Agent</center>""")
         with gr.Row(equal_height=False):
             file_output = gr.Files(height=200)

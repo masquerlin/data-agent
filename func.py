@@ -164,7 +164,7 @@ class data_agent(prompt_manager):
             sql_before = error.split('...')[1]
             e = error.split('...')[0]
             prompt_debug_content = prompt_debug.format(sql_before, e)
-            answer_debug = self.srun_llm(prompt_debug_content, history=history)
+            answer_debug = self.run_llm(prompt_debug_content, history=history)
             history.append({'role':'user',"content":prompt_debug_content})
             history.append({'role':'assistant',"content":answer_debug})
             return answer_debug, history
