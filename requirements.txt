@@ -1,0 +1,7 @@
+SQLAlchemy == 2.0.28
+gradio == 3.41.2
+pandas == 2.2.1
+pandasql == 0.7.3
+numpy == 1.26.4
+matplotlib == 3.8.3
+openai == 1.13.3
